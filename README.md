@@ -18,3 +18,4 @@ As advised I have added text. images and content on the Home Page as advised.
 <img width="1867" height="913" alt="Screenshot 5" src="https://github.com/user-attachments/assets/0d8df5eb-905f-4247-9888-aff07a996e67" />
 <img width="1892" height="907" alt="Screenshot 6" src="https://github.com/user-attachments/assets/f57583b9-686f-4ab9-83bf-<img width="1902" height="918" alt="Screenshot 7" src="https://github.com/user-attachments/assets/6043f4fc-5e51-4d56-a091-8c714151198d" />
 108f4bbba0b5" />
+<img width="1902" height="918" alt="Screenshot 7" src="https://github.com/user-attachments/assets/9c400665-5250-4231-930b-76b9b36aceb1" />
