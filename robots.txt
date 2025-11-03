@@ -1,0 +1,20 @@
+# Allow all crawlers
+User-agent: *
+
+# Directories to disallow (if needed)
+Disallow: /private/
+Disallow: /admin/
+Disallow: /backup/
+Disallow: /node_modules/
+
+# Files to disallow
+Disallow: /css/old-styles.css
+Disallow: /js/old-script.js
+
+# Allow important files
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap location
+Sitemap: file:///C:/Users/lab_services_student/Documents/sheltered_homelessness/sitemap.xml

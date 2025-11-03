@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Volunteer | Sheltered Homelessness</title>
+<meta name="description" content="Volunteer opportunities at Sheltered Homelessness, including full-time, part-time, and occasional roles.">
+<meta name="keywords" content="volunteer, homeless shelter, part-time, full-time, South Africa charity">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+
+<div id="wrapper">
+<header>
+<img src="_images/Logo for Unsheltered Homelessness Organization.png" alt="Sheltered Homelessness Logo" width="200">
+<nav id="topLinks">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="application.html">Application</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="volunteer.html" class="active">Volunteer</a></li>
+<li><a href="contact us.html">Contact Us</a></li>
+<li><a href="enquiry form.html">Enquiry</a></li>
+<li><a href="contact.html">Contact Form</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h1>Volunteer Opportunities</h1>
+<section class="accordion">
+<h2>Full Time</h2>
+<div class="accordion-content">
+<p>If you are not working and able to come into Sheltered Homelessness full-time, please contact us. We really need dedicated volunteers to assist.</p> 
+</div>
+
+<h2>Part Time</h2>
+<div class="accordion-content">
+<p>Even if you can only come certain days of the week for a few hours, we are grateful for your donation of time.</p>
+</div>
+
+ <h2>Occasional</h2>
+<div class="accordion-content">
+<p>If you can volunteer occasionally, we can add you to our roster.</p>
+</div>
+</section>
+
+<h2>Contact Us</h2>
+<p><strong>Work Number:</strong> 0845679901</p>
+<p><strong>Physical Address:</strong> Sandton City, Rivonia Rd, Sandhurst, Sandton, 2196, South Africa</p>
+
+<div id="volunteer-map" style="height:400px;"></div>
+</main>
+
+<footer>
+<nav id="bottomLinks">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="application.html">Application</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="volunteer.html" class="active">Volunteer</a></li>
+<li><a href="contact us.html">Contact Us</a></li>
+<li><a href="enquiry form.html">Enquiry</a></li>
+<li><a href="contact.html">Contact Form</a></li>
+</ul>
+</nav>
+<p>&copy; Sheltered Homelessness <span id="year"></span></p>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+const map = L.map('volunteer-map').setView([-26.1079, 28.0511], 13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+L.marker([-26.1079, 28.0511]).addTo(map).bindPopup('Sheltered Homelessness Office').openPopup();
+
+const accBtns = document.querySelectorAll('.accordion-btn');
+accBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
+
+</div>
+</body>
+</html>

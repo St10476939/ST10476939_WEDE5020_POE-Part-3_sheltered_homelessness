@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us | Sheltered Homelessness</title>
+<meta name="description" content="Contact Sheltered Homelessness for inquiries, volunteering, or support.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+
+<div id="wrapper">
+
+<header>
+    <img src="_images/Logo for Unsheltered Homelessness Organization.png" alt="Sheltered Homelessness Logo" width="200">
+    <nav id="topLinks">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="application.html">Application</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="contact us.html" class="active">Contact Us</a></li>
+			<li><a href="enquiry form.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<h1>Contact Us</h1>
+<article id="col2">
+    <h2>Contact Info</h2>
+    <p><strong>Work Number:</strong> 0845679901</p>
+    <p><strong>Address:</strong> Sandton City, Rivonia Rd, Sandhurst, Sandton, 2196, South Africa</p>
+
+    <div id="map" style="height:400px;"></div>
+
+    <h2>Please fill out this Survey below</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4brBjrqpo_ezTxUhyGM3DBUzkK1iD3k-NtUVRZnlm78RuLQ/viewform?usp=dialog" 
+        width="640" height="1042" frameborder="0">Loading…</iframe>
+</article>
+</main>
+
+<footer>
+<nav id="bottomLinks">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="application.html">Application</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="contact us.html" class="active">Contact Us</a></li>
+		<li><a href="enquiry form.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact Form</a></li>
+    </ul>
+</nav>
+<p>&copy; Sheltered Homelessness <span id="year"></span></p>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+const map = L.map('map').setView([-26.1079, 28.0511], 13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+L.marker([-26.1079, 28.0511]).addTo(map).bindPopup('Sheltered Homelessness Office').openPopup();
+</script>
+
+</div>
+</body>
+</html>
