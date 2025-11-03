@@ -10,6 +10,13 @@ Student Number: ST10476939
 On all the web pages HTML code, I have used the three major structural tags header, main, and footer to add content as advised
 ## 3b. Additonal Infomation
 As advised I have added text. images and content on the Home Page as advised.
+After My feedback from Part 2 updated my work ny doing the foolwing.
+ I changed the name of my file to"sheltered_homelessness.
+ I updated my proposal from Part 1.
+ I fixed some of the formats from my previous code to make them well and properly stuctured.
+ I added new html called contact.html and enquiry form.html.
+ I added a robots txt to instruct search engines on which page to index to when using the app.
+ I also created sitemap.xml to help search engines to understand the structre of the websites.
 # Screenshots
 <img width="1877" height="921" alt="Screenshot 1" src="https://github.com/user-attachments/assets/64b1fd84-03d8-491f-b378-005e6f55faea" />
 <img width="1901" height="927" alt="Screenshot 2" src="https://github.com/user-attachments/assets/e4f28026-8224-4432-be03-84526c03d19d" />
